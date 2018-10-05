@@ -1,4 +1,4 @@
-package com.laurensius_dede_suhardiman.tambakbandeng.LruBitmapCache;
+package com.laurensius_dede_suhardiman.tambakbandeng.lrubitmapcache;
 
 import com.android.volley.toolbox.ImageLoader.ImageCache;
 import android.graphics.Bitmap;

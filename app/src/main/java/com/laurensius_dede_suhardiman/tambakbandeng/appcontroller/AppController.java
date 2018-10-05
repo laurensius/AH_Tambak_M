@@ -1,4 +1,4 @@
-package com.laurensius_dede_suhardiman.tambakbandeng.AppController;
+package com.laurensius_dede_suhardiman.tambakbandeng.appcontroller;
 
 import android.app.Application;
 import android.text.TextUtils;
@@ -6,7 +6,7 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
-import com.laurensius_dede_suhardiman.tambakbandeng.LruBitmapCache.LruBitmapCache;
+import com.laurensius_dede_suhardiman.tambakbandeng.lrubitmapcache.LruBitmapCache;
 
 
 public class AppController extends Application {

@@ -3,19 +3,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="5dp"
-    tools:context=".Fragments.FragmentNotifikasi">
+    tools:context=".fragments.FragmentNotifikasi">
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:background="@mipmap/b02">
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="48dp"
+                android:src="@mipmap/notifikasi"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="10pt"
+                android:textColor="#EEEEEE"
+                android:text="Notifikasi"/>
+        </LinearLayout>
+
+        <!--KOnten Notifikasi-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical">
-
-
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:background="#FFFFFF"
+            android:layout_margin="5dp">
+            <ImageView
+                android:id="@+id/iv_notif_logo"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:src="@mipmap/normal"/>
+            <TextView
+                android:id="@+id/tv_notif_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="7pt"
+                android:padding="5dp"
+                android:background="#00CC00"
+                android:textColor="#FFFFFF"
+                android:text="Semua sensor dalam keadaan normal"/>
         </LinearLayout>
-    </ScrollView>
+    </LinearLayout>
+
+
 </LinearLayout>

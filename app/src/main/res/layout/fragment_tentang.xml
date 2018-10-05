@@ -3,19 +3,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="5dp"
-    tools:context=".Fragments.FragmentNotifikasi">
+    tools:context=".fragments.FragmentTentang">
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:background="@mipmap/b04">
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="48dp"
+                android:src="@mipmap/tentang"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="10pt"
+                android:textColor="#EEEEEE"
+                android:text="Tentang"/>
+        </LinearLayout>
+
+        <!--KOnten Notifikasi-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical">
-
-
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:background="#FFFFFF"
+            android:layout_margin="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:text="@string/app_name"
+                android:layout_marginBottom="16dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="7pt"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/konten_tentang"/>
         </LinearLayout>
-    </ScrollView>
+    </LinearLayout>
+
+
 </LinearLayout>

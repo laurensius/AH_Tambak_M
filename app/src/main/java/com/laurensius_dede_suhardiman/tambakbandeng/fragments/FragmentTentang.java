@@ -1,4 +1,4 @@
-package com.laurensius_dede_suhardiman.tambakbandeng.Fragments;
+package com.laurensius_dede_suhardiman.tambakbandeng.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -9,12 +9,12 @@ import android.view.ViewGroup;
 
 import com.laurensius_dede_suhardiman.tambakbandeng.R;
 
-public class FragmentMonitoring extends Fragment {
+public class FragmentTentang extends Fragment {
 
-    public FragmentMonitoring() {}
+    public FragmentTentang() {}
 
-    public static FragmentMonitoring newInstance() {
-        FragmentMonitoring fragment = new FragmentMonitoring();
+    public static FragmentTentang newInstance() {
+        FragmentTentang fragment = new FragmentTentang();
         return fragment;
     }
 
@@ -27,7 +27,7 @@ public class FragmentMonitoring extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_monitoring, container, false);
+        return inflater.inflate(R.layout.fragment_tentang, container, false);
     }
 
 
